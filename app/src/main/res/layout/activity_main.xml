@@ -14,6 +14,7 @@
         android:contentDescription="@string/logo" />
 
     <Button
+        android:id="@+id/btnsignup"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="@string/Btn_Signup"
@@ -21,10 +22,10 @@
         android:layout_gravity="top|right"
         android:background="#FF4081"
         android:textColor="#ffff"
-        android:onClick="selfDestruct"
         android:layout_alignParentRight="true"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="25dp"
+
         />
 
 

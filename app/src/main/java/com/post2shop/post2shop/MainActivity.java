@@ -1,9 +1,11 @@
 package com.post2shop.post2shop;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
 
@@ -27,5 +29,13 @@ public class MainActivity extends AppCompatActivity {
                 R.array.subcategory_array, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerSub.setAdapter(adaptersub);
+        final Button button = (Button) findViewById(R.id.btnsignup);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent launchactivity= new Intent(MainActivity.this,signup.class);
+                startActivity(launchactivity);
+            }
+        });
     }
 }

@@ -8,6 +8,9 @@
     <string name="Btn_Post">Post</string>
     <string name="Btn_Signup">Sign up</string>
     <string name="logo">logo</string>
+    <string name="FirstName">First Name</string>
+    <string name="LastName">Last Name</string>
+    <string name="Email">Email</string>
     <string-array name="category_array">
         <item>Electronics</item>
         <item>Men</item>
