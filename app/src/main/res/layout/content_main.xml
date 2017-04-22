@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/post"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Post_hint"
+        android:layout_marginTop="100dp"
+        android:inputType="text" />
+
+    <Spinner
+        android:id="@+id/category_spinner"
+        android:gravity="start"
+        android:layout_alignParentStart="true"
+        android:layout_width="180dip"
+        android:layout_marginTop="140dp"
+        android:layout_alignParentLeft="true"
+        android:text="Left"
+        android:overlapAnchor="false"
+        android:layout_height="50dip" />
+    <Spinner
+        android:id="@+id/subcategory_spinner"
+        android:gravity="right"
+        android:layout_width="180dip"
+        android:layout_alignParentRight="true"
+        android:text="Right"
+        android:layout_marginTop="140dp"
+        android:hint="@string/SubCategory_hint"
+        android:overlapAnchor="false"
+        android:layout_height="50dip"
+        android:drawable="@android:color/primary_text_light"/>
+
+    <EditText
+        android:id="@+id/pincode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Pincode_hint"
+        android:layout_marginTop="200dp"
+        android:inputType="text" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/Btn_Post"
+        android:layout_marginTop="260dp"
+        android:background="#FF4081"
+        android:textColor="#ffff"
+        android:onClick="selfDestruct"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        />
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:src="@drawable/banner" />
+</RelativeLayout>
