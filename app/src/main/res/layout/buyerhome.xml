@@ -1,42 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="@string/hi_customer"
+        android:textColor="#daa859"
+        android:focusableInTouchMode="false"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"/>
+
     <EditText
         android:id="@+id/post"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:hint="@string/Post_hint"
-        android:layout_marginTop="100dp"
-        android:inputType="text" />
-
+        android:layout_marginTop="10dip"/>
     <Spinner
         android:id="@+id/category_spinner"
         android:gravity="start"
-        android:layout_alignParentStart="true"
         android:layout_width="180dip"
-        android:layout_marginTop="140dp"
-        android:layout_alignParentLeft="true"
         android:text="Left"
         android:overlapAnchor="false"
-        android:layout_height="50dip" />
+        android:layout_height="50dip"
+        android:layout_gravity="left" />
     <Spinner
         android:id="@+id/subcategory_spinner"
-        android:gravity="right"
         android:layout_width="180dip"
-        android:layout_alignParentRight="true"
         android:text="Right"
-        android:layout_marginTop="140dp"
         android:hint="@string/SubCategory_hint"
         android:overlapAnchor="false"
         android:layout_height="50dip"
-        android:drawable="@android:color/primary_text_light"/>
+        android:drawable="@android:color/primary_text_light"
 
+        android:paddingRight="16dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="-50dp" />
     <EditText
         android:id="@+id/pincode"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:hint="@string/Pincode_hint"
-        android:layout_marginTop="200dp"
         android:inputType="text" />
 
     <Button
@@ -44,18 +50,18 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="@string/Btn_Post"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="10dp"
         android:background="#FF4081"
         android:textColor="#ffff"
-        android:onClick="onClick"
+        android:onClick="SelfDestruct"
         android:layout_alignParentRight="true"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="15dp"
-        />
-    <ImageView
-        android:id="@+id/banner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
-        android:src="@drawable/banner" />
-</RelativeLayout>
+        android:layout_gravity="right" />
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pager"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

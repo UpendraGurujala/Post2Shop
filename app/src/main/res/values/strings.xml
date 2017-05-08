@@ -11,6 +11,16 @@
     <string name="FirstName">First Name</string>
     <string name="LastName">Last Name</string>
     <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="PhoneNumber">Phone Number</string>
+    <string name="StoreName">Store Name</string>
+    <string name="AddressLine1">Address Line 1</string>
+    <string name="AddressLine2">Address Line 2</string>
+    <string name="City">City</string>
+    <string name="State">State</string>
+    <string name="PostalCode">Postal Code</string>
+    <string name="Country">Country</string>
+    <string name="hi_customer">Abhishek DV</string>
     <string-array name="category_array">
         <item>Electronics</item>
         <item>Men</item>

@@ -9,4 +9,20 @@
         <item name="android:colorBackground">@color/foreground_material_dark</item>
     </style>
 
+    <!-- spinner alignment related starts.  -->
+    <style name="AppTheme.Spinner">
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItem</item>
+    </style>
+
+    <style name="SpinnerItem">
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="SpinnerDropDownItem">
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+    <!-- spinner alignment related ends.  -->
 </resources>

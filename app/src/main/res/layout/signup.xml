@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
+
     <EditText
         android:id="@+id/FirstName"
         android:layout_width="fill_parent"
@@ -8,4 +9,93 @@
         android:hint="@string/FirstName"
         android:layout_marginTop="20dp"
         android:inputType="text" />
+    <EditText
+        android:id="@+id/LastName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/LastName"
+        android:layout_marginTop="60dp"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Email"
+        android:layout_marginTop="100dp"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Password"
+        android:layout_marginTop="140dp"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/PhoneNumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/PhoneNumber"
+        android:layout_marginTop="180dp"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/StoreName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/StoreName"
+        android:layout_marginTop="220dp"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/AddressLine1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/AddressLine1"
+        android:layout_marginTop="260dp"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/AddressLine2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/AddressLine2"
+        android:layout_marginTop="300dp"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/City"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/City"
+        android:layout_marginTop="340dp"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/State"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/State"
+        android:layout_marginTop="380dp"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/PostalCode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/PostalCode"
+        android:layout_marginTop="420dp"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/Country"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Country"
+        android:layout_marginTop="460dp"
+        android:inputType="text" />
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/Btn_Signup"
+        android:layout_marginTop="500dp"
+        android:background="#FF4081"
+        android:textColor="#ffff"
+        android:onClick="selfDestruct"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        />
 </RelativeLayout>

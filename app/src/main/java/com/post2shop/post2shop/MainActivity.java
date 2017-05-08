@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         ImageView imageView = (ImageView) findViewById(R.id.logo);
         imageView.setImageResource(R.drawable.logo);
 
-
+//Spinner code begins
         Spinner spinner = (Spinner) findViewById(R.id.category_spinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.category_array, android.R.layout.simple_spinner_item);
@@ -27,15 +27,29 @@ public class MainActivity extends AppCompatActivity {
         Spinner spinnerSub = (Spinner) findViewById(R.id.subcategory_spinner);
         ArrayAdapter<CharSequence> adaptersub = ArrayAdapter.createFromResource(this,
                 R.array.subcategory_array, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adaptersub.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerSub.setAdapter(adaptersub);
-        final Button button = (Button) findViewById(R.id.btnsignup);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        //Spinner code ends
+
+        //buttons code starts here
+        final Button buttonSignup = (Button) findViewById(R.id.btnsignup);
+
+        buttonSignup.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent launchactivity= new Intent(MainActivity.this,signup.class);
                 startActivity(launchactivity);
             }
         });
+
+        final Button buttonPost = (Button) findViewById(R.id.btnpost);
+        buttonPost.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent launchactivity= new Intent(MainActivity.this,buyerhome.class);
+                startActivity(launchactivity);
+            }
+        });
+//buttons code ends here
+
     }
 }
