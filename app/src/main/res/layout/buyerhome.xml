@@ -10,7 +10,7 @@
         android:textColor="#daa859"
         android:focusableInTouchMode="false"
         android:textStyle="bold"
-        android:layout_marginTop="80dp"/>
+        android:layout_marginTop="40dp"/>
 
     <EditText
         android:id="@+id/post"
@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="@string/Btn_Post"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="0dp"
         android:background="#FF4081"
         android:textColor="#ffff"
         android:onClick="SelfDestruct"
@@ -58,10 +58,19 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="15dp"
         android:layout_gravity="right" />
-    <android.support.v4.view.ViewPager
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/pager"
-
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="?attr/colorPrimary"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tab_layout"/>
 </LinearLayout>
